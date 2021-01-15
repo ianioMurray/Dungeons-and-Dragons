@@ -303,13 +303,57 @@ namespace Dungeons_and_Dragons
                     {
                         return new ShortSword();
                     }
+                case (int)WeaponType.Dagger:
+                    {
+                        return new NormalDagger();
+                    }
+                case (int)WeaponType.SilverDagger:
+                    {
+                        return new SilverDagger();
+                    }
                 case (int)WeaponType.Spear:
                     {
                         return new Spear();
                     }
-                case (int)WeaponType.Dagger:
+                case (int)WeaponType.HandAxe:
                     {
-                        return new NormalDagger();
+                        return new HandAxe();
+                    }
+                case (int)WeaponType.BattleAxe:
+                    {
+                        return new BattleAxe();
+                    }
+                case (int)WeaponType.PoleArm:
+                    {
+                        return new PoleArm();
+                    }
+                case (int)WeaponType.Mace:
+                    {
+                        return new Mace();
+                    }
+                case (int)WeaponType.Club:
+                    {
+                        return new Club();
+                    }
+                case (int)WeaponType.WarHammer:
+                    {
+                        return new WarHammer();
+                    }
+                case (int)WeaponType.Sling:
+                    {
+                        return new Sling();
+                    }
+                case (int)WeaponType.Crossbow:
+                    {
+                        return new CrossBow();
+                    }
+                case (int)WeaponType.ShortBow:
+                    {
+                        return new ShortBow();
+                    }
+                case (int)WeaponType.Longbow:
+                    {
+                        return new LongBow();
                     }
                 default:
                     throw new Exception("Unknown Weapon");

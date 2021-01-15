@@ -24,7 +24,7 @@ namespace Dungeons_and_Dragons
             CurrentLevel = GetClericLevel();
         }
 
-        public void Save()
+        public override void Save()
         {
             Repository rep = new Repository();
             rep.SaveCharacter(this, ClassType.Cleric);

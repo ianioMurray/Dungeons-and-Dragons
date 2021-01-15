@@ -80,7 +80,7 @@ namespace Dungeons_and_Dragons
             SetThievesAbilities(CurrentLevel);
         }
 
-        public void Save()
+        public override void Save()
         {
             Repository rep = new Repository();
             rep.SaveCharacter(this, ClassType.Thief);

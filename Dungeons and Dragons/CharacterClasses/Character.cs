@@ -406,5 +406,7 @@ namespace Dungeons_and_Dragons
 
             ArmourClass = armourValue;
         }
+
+        public abstract void Save();
     }
 }

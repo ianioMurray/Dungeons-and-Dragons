@@ -100,23 +100,21 @@ namespace Dungeons_and_Dragons
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Fighter c = character as Fighter;
-            c.EquipToBody(new ChainMail());
-            c.EquipToHand(new Spear(), Hand.Right);
-            c.EquipToHand(new NormalDagger(), Hand.Left);
+            character.EquipToBody(new ChainMail());
+            character.EquipToHand(new Spear(), Hand.Right);
+            character.EquipToHand(new NormalDagger(), Hand.Left);
 
-            c.Save();
+            character.Save();
             UpdateUI();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Fighter c = character as Fighter;
-            c.EquipToBody(new PlateMail());
-            c.EquipToHand(new Sword(), Hand.Right);
-            c.EquipToHand(new Shield(), Hand.Left);
+            character.EquipToBody(new PlateMail());
+            character.EquipToHand(new Sword(), Hand.Right);
+            character.EquipToHand(new Shield(), Hand.Left);
 
-            c.Save();
+            character.Save();
             UpdateUI();
         }
     }
